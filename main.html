@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home-PowerPlaza</title>
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="sticky">
+        <div class="nav">
+            <div class="logo"><img src="logo.png" alt="">PowerPlaza</div>
+            <div class="nav_inner">
+                <ul>
+                    <li><button type="button"><a href="main.html">Home</a></button></li>
+                    <li><button type="button"><a href="services.html">Services Available</a></button></li>
+                    <li><button type="button"> <a href="product.html">Products</a></button></li>
+                    <li><button type="button"><a href="contact.html">Contact Us</a></button></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="search login">
+        <div class="search_inner">
+            <div class="searchbox">
+                <div class="row"><input type="text" name="" id="inputbox" placeholder="Search Here" autocomplete="on">
+                    <button><img src="icons8-search-30.png" alt=""></video></button>
+                </div>
+            </div>
+            <a href="login.html">
+                Login/Signup Here
+            </a>
+        </div>
+    </div>
+
+    <div class="slideshow-container">
+        <div class="slide">
+            <img src="slideshow/image1.jpg" alt="Slide 1">
+        </div>
+        <div class="slide">
+            <img src="slideshow/image2.jpg" alt="Slide 2">
+        </div>
+        <div class="slide">
+            <img src="slideshow/image3.jpg" alt="Slide 3">
+        </div>
+        <div class="slide">
+            <img src="slideshow/image4.jpg" alt="Slide 4">
+        </div>
+        <div class="slide">
+            <img src="slideshow/image5.jpg" alt="Slide 5">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <div class="dots" style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+    </div>
+    <br>
+    <h1>W E L C O M E  &nbsp; &nbsp;T O &nbsp;&nbsp; P o w e r P l a z a</h1>
+<div class="aboutus">   <div class="text"><h2>About Us</h2>
+    <p class="detail">Founded in 2024, PowerPlaza stands as a beacon of excellence in the realm of electrical solutions. With a steadfast commitment to quality, reliability, and customer satisfaction, we have emerged as a trusted destination for individuals and businesses seeking top-tier products and expert repair services. Explore our comprehensive range of electrical offerings and experience the PowerPlaza difference today.</p>
+</div>
+<img src="aboutus.webp" alt=""></div>
+ 
+    <p class="sepration"></p>
+    <footer>
+        <div class="footerlogo logo"><img src="logo.png" alt="">PowerPlaza</div>
+        
+    </footer>
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            const slides = document.getElementsByClassName("slide");
+            const dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+                slideIndex = 1;
+            }
+            if (n < 1) {
+                slideIndex = slides.length;
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active-dot", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active-dot";
+        }
+
+        // Automatic slideshow
+        setInterval(() => {
+            plusSlides(1);
+        }, 3000);
+    </script>
+</body>
+
+</html>

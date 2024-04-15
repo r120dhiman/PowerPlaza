@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up / Sign In</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
+
+    <style>
+     
+    </style>
+</head>
+
+<body>
+    <div class="sticky">
+        <div class="nav">
+            <div class="logo"><img src="logo.png" alt="">PowerPlaza</div>
+            <div class="nav_inner">
+                <ul>
+                    <li><button type="button"><a href="main.html">Home</a></button></li>
+                    <li><button type="button"><a href="services.html">Services Available</a></button></li>
+                    <li><button type="button"> <a href="product.html">Products</a></button></li>
+                    <li><button type="button"><a href="contact.html">Contact Us</a></button></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="formContainer">
+        <h2 id="formTitle">Sign Up</h2>
+        <div class="form-control" id="nameField">
+
+            <input type="text" id="name" placeholder="Enter your name">
+        </div>
+        <div class="form-control">
+       
+            <input type="email" id="gmail" placeholder="Enter your email">
+        </div>
+        <div class="form-control">
+
+            <input type="password" id="password" placeholder="Enter your password">
+        </div><div class="buttons">
+        <button class="btn btn-primary" onclick="signIn()">Sign In</button>
+        <button class="btn btn-secondary" onclick="signUp()"><a href="main.html">Sign Up</a></button>
+        <span class="back-arrow" onclick="reloadPage()">Back to Sign Up</span></div>
+    </div>
+    <p class="sepration"></p>
+    <footer>
+        <div class="footerlogo logo"><img src="logo.png" alt="">PowerPlaza</div>
+       
+    </footer>
+
+  <script src="loginscript.js"></script>
+</body>
+
+</html>

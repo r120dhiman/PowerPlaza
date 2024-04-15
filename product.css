@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.sticky {
+    position: relative;
+}
+
+.nav {
+    position: sticky;
+    display: flex;
+    align-items: center;
+    width: 80vw;
+    margin: auto;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    padding: 5px 10px;
+}
+
+.logo {
+    display: flex;
+    font-weight: bolder;
+    align-items: center;
+    font-size: 35px;
+}
+
+.nav_inner {
+    display: flex;
+}
+
+.nav_inner ul {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+}
+
+.nav_inner ul li button {
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+
+}
+
+@keyframes color {
+    to {
+        background-color: rgba(153, 153, 136, 0.452);
+    }
+
+}
+
+.nav_inner ul li button a:hover {
+    color: purple;
+    /* border: 2PX solid rgba(64, 224, 208, 0.521); */
+    border-radius: 6px;
+    animation: color 0.3s ease-in-out 1 forwards;
+
+}
+
+.search_inner {
+    display: flex;
+    justify-content: space-between;
+    width: 80vw;
+    margin: auto;
+    align-items: center;
+}
+
+#inputbox {
+    border: none;
+    height: 7vh;
+    /* width: 38vw; */
+}
+
+.row button {
+    background-color: transparent;
+    border: none;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+}
+
+input {
+    flex: 1;
+    height: 50px;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.search_inner a {
+    font-size: 20px;
+}
+
+.slider {
+    width: 100vw;
+    gap: 30px;
+    margin-top: 30px;
+
+
+
+}
+
+.slides img {
+    width: 25vw;
+    border-radius: 25px;
+}
+
+.slideshow {
+    display: grid;
+    margin-left: 30px;
+    align-items: center;
+
+    grid-template-columns: 30vw 60vw;
+}
+
+.prev {
+    background-color: transparent;
+    border: none;
+}
+
+.next {
+    background-color: transparent;
+    border: none;
+}
+
+.price {
+    font-size: 24px;
+}
+
+.price:hover {
+    color: rgb(59, 6, 59);
+    font-weight: 500;
+    font-size: 30px;
+    animation: price 1.5s ease-in-out 1 backwards;
+}
+
+@keyframes price {
+    to {
+        transform: translateX(150%) translateY(150%);
+
+    }
+
+}
+.booking{
+margin-left: 50%;
+}
+.sepration{
+    height: 2px;
+    background-color: gray;
+    
+}
+footer{
+    display: grid;
+    justify-content: center;
+    flex-direction: row;
+}

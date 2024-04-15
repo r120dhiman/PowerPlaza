@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;}
+.nav{
+    display: flex;
+    align-items: center;
+    width: 80vw;
+    margin: auto;
+    justify-content: space-between;
+}
+a{
+    text-decoration: none   ;
+    color: black;
+    padding: 5px  10px;
+}
+.logo{display: flex;
+    font-weight: bolder;
+    align-items: center;
+    font-size: 35px;
+}
+.nav_inner{
+    display: flex;
+}
+.nav_inner ul{display: flex;
+    gap:1px;
+    list-style-type: none;
+}
+.nav_inner ul li button{
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    }
+    .nav_inner ul li button a:hover{
+        color: purple;
+        border-radius: 6px;
+        animation: color 0.3s ease-in-out  1 forwards ;
+    }
+    .main{
+        padding-top: 50px;
+        display: grid;
+        grid-template-columns: 33vw 33vw 33vw;
+        grid-template-rows: 50vh 50vh;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+    }
+    .service{
+        justify-content: center;
+        text-align: center;
+        font-size: 36px;
+        font-weight: 400;
+        display: grid;
+        text-shadow: 1px 1px 6px #999;
+    }
+.service:hover{
+    color: rgb(51, 51, 48);
+    /* background-color: rgba(0, 255, 255, 0.61); */
+}
+@keyframes color {
+    to{
+        background-color: rgba(64, 224, 208, 0.3);
+    }
+    
+}
+.service img{
+   align-self: center;
+   border-radius: 10px;
+   width: 25vw  ;   
+ 
+}
+.main img{height: 30vh;
+    display:flex;
+    flex-direction: row;
+}
+.sepration{
+    height: 2px;
+    background-color: gray;
+    
+}
+footer{
+    display: grid;
+    justify-content: center;
+    flex-direction: row;
+}
+/* media query starts from here  */
+@media screen and (max-width: 800px) {
+    .logo{
+        font-size: 25px;
+    } 
+    .logo img{
+        width: 30px;
+    }
+    .nav_inner ul li button{font-size: 13px;}   
+    a{
+        padding: 2px 2px;
+    }   
+    .logo img{
+        width: 30px;
+    } 
+    .nav{justify-self: center;
+        margin: 0px 0px;
+    } 
+    .nav_inner ul{padding-left: 10px;
+
+    }
+    .service {
+        font-size: 25px;
+            }
+    /* .service img {
+        width: 20vw;
+    } */
+    
+}
+@media screen and (max-width:520px) {.logo{
+    font-size: 15px;
+ 
+    }
+    .logo img{
+        width: 30px;
+    }
+    .nav_inner ul li button{font-size: 10px;}   
+    a{
+    padding: 1px 1px;
+    }   
+    .logo img{
+    width: 33vw;
+    } 
+    .nav{justify-self: center;
+    margin: 0px 10px;
+    } 
+    .nav_inner ul{padding-left: 10px;
+    
+    }
+    .service {
+        font-size: 22px;
+           }
+
+    
+}
+@media screen and (max-width:520px) {.logo img{
+    width: 30px;
+}
+    
+}

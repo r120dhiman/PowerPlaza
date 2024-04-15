@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+*{font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;}
+   body{display: grid;
+        position:relative;
+    }
+    .sticky{
+        display: grid;
+    }
+.nav{position: sticky;
+    top: auto;
+    display: flex;
+  
+    align-items: center;
+    width: 80vw;
+    margin: auto;
+    justify-content: space-between;
+}
+a{
+    text-decoration: none   ;
+    color: black;
+    padding: 5px  5px;
+}
+.logo{display: flex;
+    font-weight: bolder;
+    align-items: center;
+    font-size: 35px;
+}
+.nav_inner{
+    display: flex;
+}
+.nav_inner ul{display: flex;
+    gap: 1px;
+    list-style-type: none;
+}
+.nav_inner ul li button{
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    }
+
+
+
+    .nav_inner ul li button a:hover{
+        color: purple;
+        border-radius: 6px;
+        animation: color 0.3s ease-in-out  1 forwards ;
+    }
+    .form {padding: 100px 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .form form{display: flex;
+        flex-direction: column;
+        gap: 20px   ;
+    }
+.form form input{height: 50px;
+    border-radius: 5px;
+    display: flex;
+   width: 80vw;
+    border: 2px solid gray;
+    flex-direction: row;
+    justify-content: center;
+   
+}
+textarea{ border: 2px solid gray;
+   border-radius: 5px;
+   max-width: 80vw;
+}
+
+.sepration{
+    width: 100vw;
+    height: 2px;
+    background-color: gray;
+    
+}
+.form{justify-self: center;
+    width: 100vw;
+    margin: auto;
+}
+.form a {display: grid;
+    justify-content: center;
+    align-items: center;
+    font-family: "Electrolize", sans-serif;
+    background-color: #999999a4;
+    border: transparent;
+  height: 10vh; text-align: center;
+    border-radius: 5vh;
+   
+}
+.form button{ font-size: 48px;
+    font-weight: 700;
+
+    color: white;
+   
+    background-color: transparent;
+    border: transparent;
+   
+    
+}
+footer{
+    display: grid;
+    justify-content: center;
+    flex-direction: row;
+}
+
+/* media queries begain here */
+@media screen and (max-width: 800px ){
+    .logo{
+        font-size: 25px;
+    } 
+    .nav_inner ul li button{font-size: 13px;}   
+    a{
+        padding: 2px 2px;
+    }   
+    .logo img{
+        width: 30px;
+    } 
+    .nav{justify-self: center;
+        margin: 0px 0px;
+    } 
+    .nav_inner ul{padding-left: 10px;
+
+    }
+    .form input {
+       margin: auto;
+    }
+    .form textarea{
+        margin: auto;
+    }
+    .form{
+       justify-self: center;
+    }
+    .form button{
+        font-size: 35px;
+         }
+        .form a{display: grid;
+        height: 10vh;
+        width: 70vw;
+        margin: auto;
+        align-items: center;
+        justify-content: center;}  
+}
+
+@media screen and (max-width:540px) {.logo{
+font-size: 17px;
+} 
+.nav_inner ul li button{font-size: 10px;}   
+a{
+padding: 1px 1px;
+}   
+.logo img{
+width: 30px;
+} 
+.nav{justify-self: center;
+margin: 0px 10px;
+} 
+.nav_inner ul{padding-left: 10px;
+
+}
+.form input {
+margin: auto;
+}
+.form textarea{
+margin: auto;
+}
+.form{
+justify-self: center;
+}
+.form button{
+font-size: 20px;
+ }
+.form a{display: grid;
+height: 10vh;
+width: 70vw;
+margin: auto;
+align-items: center;
+justify-content: center;}  
+
+}
